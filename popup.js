@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
   const targetPath = spp_data.display_url.trim();
 
   if (targetPath && currentPath !== targetPath) {
-    return;
+    return; // Popup দেখাবো না অন্য পেজে
   }
 
   setTimeout(function () {
