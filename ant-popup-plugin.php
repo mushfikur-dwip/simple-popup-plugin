@@ -19,8 +19,8 @@ function spp_enqueue_scripts() {
         'popup_text' => esc_html($options['popup_text']),
         'cta_text'   => esc_html($options['cta_text']),
         'cta_link'   => esc_url($options['cta_link']), 
-       'popup_delay'=> intval($options['popup_delay'] ?? 5), // নতুন delay field
-
+       'popup_delay'=> intval($options['popup_delay'] ?? 5),
+       'display_url'  => esc_html($options['display_url'] ?? '')
     )); 
 }
 add_action('wp_enqueue_scripts', 'spp_enqueue_scripts');
